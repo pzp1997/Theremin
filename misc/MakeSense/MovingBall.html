@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>BallSensor</title>
+</head>
+
+<body>
+  <canvas id="can" height="400" width="400" style="border:1px solid #000000;"></canvas>
+
+  <script type="text/javascript">
+    var c = document.getElementById("can");
+    var ctx = c.getContext("2d");
+    var sensorData = 0;
+
+    setInterval(function() {
+      ctx.clearRect(0, 0, ctx.canvas.width, ctx.canvas.height);
+      ctx.beginPath();
+      ctx.arc(ctx.canvas.width / 2, sensorData, 20, 0, 2 * Math.PI);
+      ctx.stroke();
+      //sensorData++;
+    }, 50);
+  </script>
+</body>
+
+</html>
