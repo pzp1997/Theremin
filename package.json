@@ -1,0 +1,37 @@
+{
+  "name": "theremin",
+  "version": "1.0.0",
+  "description": "A theremin written in CoffeeScript",
+  "main": "scripts/theremin.js",
+  "scripts": {
+    "prepublish": "npm run build",
+    "build": "npm run build:js",
+    "build:js": "coffee --output build/ --compile scripts/",
+    "clean": "rimraf build/",
+    "start": "http-server ./",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pzp1997/Theremin.git"
+  },
+  "keywords": [
+    "theremin",
+    "CoffeeScript"
+  ],
+  "author": {
+    "name": "Palmer Paul",
+    "email": "pzpaul2002@yahoo.com",
+    "url": "http://palmerpaul.com/"
+  },
+  "license": "SEE LICENSE IN LICENSE.md",
+  "bugs": {
+    "url": "https://github.com/pzp1997/Theremin/issues"
+  },
+  "homepage": "https://github.com/pzp1997/Theremin#readme",
+  "devDependencies": {
+    "coffee-script": "^1.10.0",
+    "http-server": "^0.9.0",
+    "rimraf": "^2.5.2"
+  }
+}
