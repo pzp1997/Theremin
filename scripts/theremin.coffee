@@ -4,7 +4,7 @@ $(document).ready ->
 
   oscillator1 = audioCtx.createOscillator()
   oscillator2 = audioCtx.createOscillator()
-  delayNode = audioCtx.createDelayNode()
+  delayNode = audioCtx.createDelay()
   gainNode = audioCtx.createGain()
 
   oscillator1.connect delayNode
